@@ -51,7 +51,7 @@ h1 {
 }
 
 
-*{ 
+*{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -73,7 +73,7 @@ h1 {
 }
 
 
-.header{ 
+.header{
     position: sticky;
     z-index: 100; /* Ensure it's above other elements when scrolling */
     top: 0; /* Stick the header to the top of the viewport */
@@ -189,7 +189,7 @@ h5 {
     color: #f7f7f7;
     transition: all 0.3s ease;
     transform: translateY(1px);  /* Button moves down slightly when clicked */
-    
+
 }
 
 h6 {
@@ -261,7 +261,7 @@ h6 {
         border-radius: 14px;
         border-color: #000;
         padding: 20px 60px;
-        width: auto;       
+        width: auto;
 }
 
 /* Footer */
@@ -287,33 +287,33 @@ body {
     padding: 4px; /* Optional: Add padding for better readability */
     box-shadow: 10px 4px 6px 4px rgba(0, 0, 0, 0.15);
 }
-  
+
   .footer_logo {
-      margin: auto; 
-      display: flex; 
+      margin: auto;
+      display: flex;
       justify-content: center;
       align-content: center;
   }
 
 /* Content Box */
 
-.contentBox { 
+.contentBox {
     align-content: center;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    position: relative; 
-    border-radius: 16px; 
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: blur(5px); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    height: 100px; 
-    width: 300px; 
-    margin: 10px; 
-    cursor: grab; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    cursor: grab;
     transition: transform 0.3s ease; /* Only transition transform property */ flex-shrink: 0; top: auto; /* Reset any top positioning */ left: auto; /* Reset any left positioning */
-    flex-shrink: 0; 
+    flex-shrink: 0;
     top: auto; /* Reset any top positioning */ left: auto;
 
 }
@@ -339,8 +339,8 @@ body {
     transform: translate(-50%, -50%); /* Center the box */
     margin: 0; /* Remove margin for enlarged state */
     background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
-    pointer-events: none; /* Allow pointer events for interactions */ 
-    overflow: scroll;
+    pointer-events: none;
+    cursor: auto;
 }
 
 
@@ -349,13 +349,12 @@ body {
     height: calc(100vh - 40px); /* Full height with some space */
     width: calc(100vw - 40px);  /* Full width with some space */
     z-index: 1; /* Bring active box to the front */
-    overflow: scroll;
 }
 
 #contentContainer {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between; 
+    justify-content: space-between;
     scale: 90%;
     display: flex;
     align-self: center;
@@ -407,12 +406,14 @@ body {
     flex-direction: column;
     align-items: center; /* Centers content horizontally */
     justify-content: left;
+    text-justify: justified;
     padding: 40px;
     margin: auto;
     max-height: calc(100vh - 60px); /* Ensures it fits within the viewport */
     overflow-y: auto;               /* Allows scrolling if content overflows */
-    pointer-events: none;
-} 
+    pointer-events: all;
+    cursor: auto;
+}
 
 .close-button {
     position: fixed;

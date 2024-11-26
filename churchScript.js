@@ -35,7 +35,7 @@ const contentData = {
         imageUrl2: " Lorem Ipsum",
         imageUrl3: " Lorem Ipsum",
     },
-    4: {        
+    4: {
         title: "Entry #4: Lorem [Participant]",
         content1: " Lorem Ipsum",
         content2: " Lorem Ipsum",
@@ -49,14 +49,12 @@ const contentData = {
 
 // Function to handle box clicks
 function handleBoxClick(event) {
-    const box = event.currentTarget; // Get the clicked box
+    const box = event.currentTarget;
     const contentNum = box.id.replace('contentBox', '');
 
-    // If clicked box already has 'enlarged', reset to original state
-    if (box.classList.contains('enlarged')) {
+    if (event.target.classList.contains('close-button')) {
         resetBox(box);
-    } else {
-        // Enlarge the clicked box and update its content
+    } else if (!box.classList.contains('enlarged')) {
         enlargeBox(box, contentNum);
     }
 }
@@ -65,7 +63,7 @@ function handleBoxClick(event) {
 function enlargeBox(box, contentNum) {
     // Enlarge the clicked box and update its content
     const { title, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
-    
+
     box.classList.add('enlarged');
     box.innerHTML = `
         <div class="boxInformation">
