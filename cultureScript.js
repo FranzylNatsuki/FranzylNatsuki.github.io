@@ -52,9 +52,9 @@ const contentData = {
           content2: "As a new student of the school, I got to celebrate my school’s conception, it was also impactful seeing all the alumni and students of other year levels celebrating Silliman. It was fun seeing my boys dancing on the Cimafranca ballfield.",
           content3: "It is important to commemorate anniversaries because they are testaments to the history. Silliman is my new home and it is vital that I know the history and culture of it.",
           content4: "Because of this activity, I have a whole new perspective on the school that I am now in. I am also enlightened of the possibilities of the Silliman graduate.",
-          imageUrl1: " Lorem Ipsum",
-          imageUrl2: " Lorem Ipsum",
-          imageUrl3: " Lorem Ipsum",
+          imageUrl1: "PHOTOS/Culture/IMG_6605.png",
+          imageUrl2: "PHOTOS/Culture/IMG_6612.png",
+          imageUrl3: "PHOTOS/Culture/IMG_6615.png",
         },
       6: {
           title: "Entry #6: Horror Chamber (hosted by Silliman University CAS) [Participant]",
@@ -68,13 +68,13 @@ const contentData = {
         },
       7: {
           title: "Entry #7: Dal-uy Festival (hosted by Foundation University) [Participant]",
-          content1: " Lorem Ipsum",
-          content2: " Lorem Ipsum",
-          content3: " Lorem Ipsum",
-          content4: " Lorem Ipsum",
-          imageUrl1: " Lorem Ipsum",
-          imageUrl2: " Lorem Ipsum",
-          imageUrl3: " Lorem Ipsum",
+          content1: "As I have been told by my friends from Foundation University the Dal Uy festival is part of the yearly events of their school’s founders’ day.  It was about throwing lanterns to the sea, lanterns that were made of paper and marked with their dreams and aspirations. It was a spur of the moment stop since a friend mentioned it to me.",
+          content2: "The festival was a fun program but I think what was most beautiful was when the actual lanterns were placed on the sea. It was fun seeing them have fun with their lanterns and of course some wrote some witty ‘hugots’ but some had some very genuine and wholesome dreams which reminded me of my own. Most of them wanted to just succeed in their course like being a Registered Nurse, Doctor, Biologist, and others. ",
+          content3: "This made me realize that dreams are such fragile things that we have to treasure. It’s also something that is special and sharing it to the world means a lot to those who dreams. This also made me realize that weather I share the same dreams, we still have to value each other’s dream because while I can’t relate to their aspired desires, they have their own special reason as to why they wake up in the morning and work hard every day.",
+          content4: "Because of this activity, I got to be inspired to chase my dreams just like those hardworking people. I also got to see a beautiful display of art in those glowing lanterns in the sea.",
+          imageUrl1: "PHOTOS/Culture/IMG_6671.png",
+          imageUrl2: "PHOTOS/Culture/IMG_6673.png",
+          imageUrl3: "PHOTOS/Culture/IMG_6679.png",
         },
 
       8: {
@@ -83,9 +83,9 @@ const contentData = {
           content2: "I came as a performer because I wanted to grow my connections. I came in early and just sat in silence as I contemplated my life choices. I wouldn’t say that it was a nice time exactly, I was surrounded by mature people who vape and smoke and I was not all for that at all, I was just there for the music. My love and passion for the craft led me to stay there however. I like performing music but the world never really gave me the right chances and right people and I was hoping that was destined moment. I then performed one of my Japanese songs from my 1st album and only hoped for the best. Gladly, I performed well and wowed them. Afterwards, my friend Xander told me that I apparently strung everybody’s heartstrings.",
           content3: "This experience changed my view of myself and what I’m capable of. Turns out I’ve just been looking to the wrong places for musical validation. All those things I did just to get noticed and appreciated didn’t live up to that one singular performance that night. I benefitted obviously because I saw a rather significant spike in my music statistics, specifically in Dumaguete which is unmistakenly due to my performance.",
           content4: "Because of this activity, I got to make new musician friends and reconnected with old ones. I got my place in that club and got to express myself in a way that I’ve never been able to. Thanks, and big-ups to SUPASA for that night though.",
-          imageUrl1: " Lorem Ipsum",
-          imageUrl2: " Lorem Ipsum",
-          imageUrl3: " Lorem Ipsum",
+          imageUrl1: "PHOTOS/Culture/IMG_6820.png",
+          imageUrl2: "PHOTOS/Culture/IMG_6822.png",
+          imageUrl3: "PHOTOS/Culture/IMG_6824.png",
         },
 
     // Add similar entries for each box up to contentBox8
