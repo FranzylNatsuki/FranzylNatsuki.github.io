@@ -22,7 +22,6 @@
          url(FONTS/LINESeedSans_W_He.ttf) format('truetype');
 }
 
-
 #bodyBG::before {
     scale: 1; /* Remove scaling */
     content: "";
@@ -73,7 +72,7 @@ h1 {
 }
 
 
-.header{
+.header {
     position: sticky;
     z-index: 100; /* Ensure it's above other elements when scrolling */
     top: 0; /* Stick the header to the top of the viewport */
@@ -142,7 +141,47 @@ box-sizing: border-box; /* Ensure padding is included in the width calculation *
 
 .about_me_body {
     display: flex;
+}
 
+.about_me_text {
+  margin: 50px 100px;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 40px;
+}
+
+.about_me_images {
+  height: 40px;
+  width: auto;
+  margin-right: 15px;
+  top: 0; bottom: 0;
+}
+
+.about_me_franzyl {
+  height: 250px;
+  width: auto;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+.languagecontainer {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table_header {
+  margin-top: 2em;
+  text-align: center;
+}
+.tablecontainer {
+  margin: 1em;
+}
+
+.table {
+  width: 100%;
+  margin: 1em 0;
 }
 
 /* Global Settings */
@@ -225,6 +264,11 @@ h6 {
 .button-style:active {
     transition: all 0.3s ease;
     transform: translateY(1px);  /* Button moves down slightly when clicked */
+}
+
+.wpeyapping {
+  padding: 75px 75px 75px 75px;
+  height: auto;
 }
 
 .FiveCees {
@@ -378,7 +422,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/fd/51/af/silliman-university.jpg?w=1200&h=-1&s=1');
+    background-image: url('silliman-university.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(10px); /* Blurs the background image */
@@ -429,4 +473,11 @@ body {
 
 .close-button:hover {
     color: red; /* Optional: Change color on hover for visibility */
+}
+
+.mobileimagesindiv {
+  width: 33%;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 5px 30px;
 }

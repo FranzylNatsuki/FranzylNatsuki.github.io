@@ -112,14 +112,14 @@ function enlargeBox(box, contentNum) {
         <div class="boxInformation">
             <button class="close-button">&times;</button>
             <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
-            <h3 style="margin: 20px;">${content1}</h3>
-            <h3 style="margin: 20px;">${content2}</h3>
-            <h3 style="margin: 20px;">${content3}</h3>
-            <h3 style="margin: 20px;">${content4}</h3>
-            <div style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
-                <img src="${imageUrl1}" style="width: 33%; height: auto; border-radius: 20px; margin: 0 5px 30px;">
-                <img src="${imageUrl2}" style="width: 33%; height: auto; border-radius: 20px; margin: 0 5px 30px;">
-                <img src="${imageUrl3}" style="width: 33%; height: auto; border-radius: 20px; margin: 0 5px 30px;">
+            <h3 class="normalyap" style="margin: 20px;">${content1}</h3>
+            <h3 class="normalyap" style="margin: 20px;">${content2}</h3>
+            <h3 class="normalyap" style="margin: 20px;">${content3}</h3>
+            <h3 class="normalyap" style="margin: 20px;">${content4}</h3>
+            <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
+                <img src="${imageUrl1}" class="mobileimagesindiv">
+                <img src="${imageUrl2}" class="mobileimagesindiv">
+                <img src="${imageUrl3}" class="mobileimagesindiv">
             </div>
         </div>
     `;
@@ -131,6 +131,8 @@ function enlargeBox(box, contentNum) {
         resetBox(box);
     });
 
+    document.body.classList.toggle('body-overflow-hidden');
+
     // Disable all other boxes
     disableOtherBoxes(box);
 }
@@ -140,6 +142,7 @@ function resetBox(box) {
     box.classList.remove('enlarged');
     box.innerHTML = `<h2 id="contentBoxText${box.id.replace('contentBox', '')}"> Entry #${box.id.replace('contentBox', '')} </h2>`;
     enableAllBoxes();
+              document.body.classList.toggle('body-overflow-hidden');
 }
 
 // Function to disable other boxes
