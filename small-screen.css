@@ -22,6 +22,24 @@
          url(FONTS/LINESeedSans_W_He.ttf) format('truetype');
 }
 
+.return_button {
+  text-decoration: none;
+  width: fit-content;
+  color: white;
+  background-color: #00B2FF;
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in, text-decoration 0.3s ease-in, color 0.3s ease-in;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.return_button:hover {
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+
 #bodyBG::before {
     scale: 1; /* Remove scaling */
     content: "";
