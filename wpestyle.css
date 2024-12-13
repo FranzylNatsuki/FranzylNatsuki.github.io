@@ -475,6 +475,17 @@ body {
     color: red; /* Optional: Change color on hover for visibility */
 }
 
+.normalyapscontent {
+    max-width: 1000px; /* Limits the width of the text blocks */
+    width: 90%; /* Ensures responsiveness */
+    margin: 20px auto; /* Centers the text within the parent */
+    text-align: justify; /* Justifies the text for a clean look */
+}
+
+.normalyap {
+  text-indent: 50px;
+}
+
 .mobileimagesindiv {
   width: 33%;
   height: auto;
