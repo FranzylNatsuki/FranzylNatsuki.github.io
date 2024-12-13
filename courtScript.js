@@ -13,6 +13,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_6692.webp",
       imageUrl2: "PHOTOS/Court/IMG_6687.webp",
       imageUrl3: "PHOTOS/Court/IMG_6689.webp",
+      date: "August 31, 2024 6PM" ,
   },
 
   2: {
@@ -24,6 +25,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_6700.webp",
       imageUrl2: "PHOTOS/Court/IMG_6696.webp",
       imageUrl3: "PHOTOS/Court/IMG_6697.webp",
+      date: "August 31, 2024 7PM" ,
   },
   3: {
       title: "Entry #3: PSFF Softball Men’s Tournament (Hosted by PSFF) [Participant]",
@@ -34,6 +36,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_6753.webp",
       imageUrl2: "PHOTOS/Court/IMG_6754.webp",
       imageUrl3: "PHOTOS/Court/IMG_6755.webp",
+      date: "September 7, 2024 2 PM" ,
   },
   4: {
       title: "Entry #4: PSFF Karate Tournament (Hosted by PSFF) [Participant]",
@@ -44,6 +47,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_6760.webp",
       imageUrl2: "PHOTOS/Court/IMG_6762.webp",
       imageUrl3: "PHOTOS/Court/IMG_6764.webp",
+      date: "September 7, 2024 3 PM" ,
   },
   5: {
       title: "Entry #5: Foundation University:  Women’s Futsal Tournament (Hosted by Foundation University) [Participant]",
@@ -54,6 +58,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_6765.webp",
       imageUrl2: "PHOTOS/Court/IMG_6767.webp",
       imageUrl3: "PHOTOS/Court/IMG_6769.webp",
+      date: "September 7, 2024 4 PM" ,
   },
   6: {
       title: "Entry #6: PSFF Badminton Tournament (Hosted by PSFF [Participant]",
@@ -64,6 +69,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_6775.webp",
       imageUrl2: "PHOTOS/Court/IMG_6777.webp",
       imageUrl3: "PHOTOS/Court/IMG_6778.webp",
+      date: "September 7, 2024 5 PM" ,
   },
   7: {
       title: "Entry #7: Pasidlakan (Hosted by Silliman University SUSHS) [Participant]",
@@ -74,6 +80,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_7307.webp",
       imageUrl2: "PHOTOS/Court/IMG_7311.webp",
       imageUrl3: "PHOTOS/Court/IMG_7312.webp",
+      date: "October 28, 2024 6PM" ,
   },
   8: {
       title: "Entry #8: Ding Ibato (Hosted by DOST sa SU) [Participant]",
@@ -84,6 +91,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Court/IMG_7401.webp",
       imageUrl2: "PHOTOS/Court/IMG_7405.webp",
       imageUrl3: "PHOTOS/Court/IMG_7406.webp",
+      date: "November 13, 2PM" ,
   },
     // Add similar entries for each box up to contentBox8
 };
@@ -103,23 +111,24 @@ function handleBoxClick(event) {
 // Function to enlarge a box
 function enlargeBox(box, contentNum) {
     // Enlarge the clicked box and update its content
-    const { title, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
+    const { title, date, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
 
     box.classList.add('enlarged');
     box.innerHTML = `
-      <div class="boxInformation">
-          <button class="close-button">&times;</button>
-          <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content4}</h3>
-          <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
-              <img src="${imageUrl1}" class="mobileimagesindiv">
-              <img src="${imageUrl2}" class="mobileimagesindiv">
-              <img src="${imageUrl3}" class="mobileimagesindiv">
-          </div>
-      </div>
+    <div class="boxInformation">
+        <button class="close-button">&times;</button>
+        <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
+        <center> <h3 class="normalyap" style="margin: 5px 0 20px;">${date}</h3> </center>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content4}</h3>
+        <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
+            <img src="${imageUrl1}" class="mobileimagesindiv">
+            <img src="${imageUrl2}" class="mobileimagesindiv">
+            <img src="${imageUrl3}" class="mobileimagesindiv">
+        </div>
+    </div>
     `;
 
     // Add event listener for the close button

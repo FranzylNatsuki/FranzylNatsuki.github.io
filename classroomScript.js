@@ -13,6 +13,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6378.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6379.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_6380.webp",
+      date: "August 17, 2024 7AM" ,
   },
 
   2: {
@@ -24,6 +25,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6415.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6417.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_6418.webp",
+      date: "August 19, 2024 8AM" ,
   },
   3: {
       title: "Entry #3: Balik Talent Lecture “Big Data and IoT: Why They Matter in Innovation” (Hosted by Confederates Student Council) [Participant]",
@@ -34,6 +36,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6456.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6457.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_6481.webp",
+      date: "August 20, 2024 8AM" ,
   },
   4: {
       title: "Entry #4: CCS Guidance Activity (Hosted by Confederates Student Council) [Participant]",
@@ -44,6 +47,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6512.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6513.webp",
       imageUrl3: "PHOTOS/Classroom/output-onlinepngtools.png",
+      date: "August 20, 2024 1PM" ,
   },
   5: {
       title: "Entry #5: Designing Intuitive User Experience: Key UI/UX Strategies (Hosted by Confederates Student Council) [Participant]",
@@ -54,6 +58,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6569.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6572.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_6573.webp",
+      date: "August 22, 2024 8 AM" ,
   },
   6: {
       title: "Entry #6: Responsible Use of Digital Technology: Do’s and Don’ts (Hosted by Dr. Mariano Lao Global Studies Center) [Participant]",
@@ -64,6 +69,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6747.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6749.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_6752.webp",
+      date: "September 7, 2024 1PM" ,
   },
   7: {
       title: "Entry #7: Freshie Orientation (Hosted by Silliman University) [Participant]",
@@ -74,6 +80,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_6807.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_6809.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_6812.webp",
+      date: "September 11, 2024 8AM" ,
   },
   8: {
       title: "Entry #8: ROTC Speech Contest (Hosted by SU ROTC Unit) [Participant]",
@@ -84,6 +91,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Classroom/IMG_7196.webp",
       imageUrl2: "PHOTOS/Classroom/IMG_7199.webp",
       imageUrl3: "PHOTOS/Classroom/IMG_7201.webp",
+      date: "October 12, 2024 10AM",
   },
     // Add similar entries for each box up to contentBox8
 };
@@ -103,13 +111,14 @@ function handleBoxClick(event) {
 // Function to enlarge a box
 function enlargeBox(box, contentNum) {
     // Enlarge the clicked box and update its content
-    const { title, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
+    const { title, date, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
 
     box.classList.add('enlarged');
     box.innerHTML = `
     <div class="boxInformation">
         <button class="close-button">&times;</button>
         <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
+        <center> <h3 class="normalyap" style="margin: 5px 0 20px;">${date}</h3> </center>
         <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
         <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
         <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>

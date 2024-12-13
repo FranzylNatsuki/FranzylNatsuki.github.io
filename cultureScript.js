@@ -13,6 +13,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Culture/IMG_6280.webp",
         imageUrl2: "PHOTOS/Culture/IMG_6309.webp",
         imageUrl3: "PHOTOS/Culture/IMG_6300.webp",
+        date: "August 15, 2024 2pm" ,
     },
     2: {
         title: "Entry #2: Parade of Lights (hosted by Silliman Univeristy) [Participant]",
@@ -23,6 +24,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Culture/IMG_6426.webp",
         imageUrl2: "PHOTOS/Culture/IMG_6429.webp",
         imageUrl3: "PHOTOS/Culture/IMG_6440.webp",
+        date: "August 19, 2024 6pm" ,
     },
     3: {
       title: "Entry #3: School Wide Acquaintance Party (hosted by Silliman Univeristy) [Participant]",
@@ -33,6 +35,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Culture/IMG_6446.webp",
       imageUrl2: "PHOTOS/Culture/IMG_6444.webp",
       imageUrl3: "PHOTOS/Culture/IMG_6450.webp",
+      date: "August 19, 2024 7pm" ,
     },
 
     4: {
@@ -44,6 +47,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Culture/IMG_6521 3.webp",
         imageUrl2: "PHOTOS/Culture/IMG_6546.webp",
         imageUrl3: "PHOTOS/Culture/IMG_6558.webp",
+        date: "August 21, 2024 7pm" ,
       },
 
       5: {
@@ -55,6 +59,7 @@ const contentData = {
           imageUrl1: "PHOTOS/Culture/IMG_6605.webp",
           imageUrl2: "PHOTOS/Culture/IMG_6612.webp",
           imageUrl3: "PHOTOS/Culture/IMG_6615.webp",
+          date: "August 26, 2024 2pm" ,
         },
       6: {
           title: "Entry #6: Horror Chamber (hosted by Silliman University CAS) [Participant]",
@@ -65,6 +70,7 @@ const contentData = {
           imageUrl1: "PHOTOS/Culture/ sdsdsd.webp",
           imageUrl2: "PHOTOS/Culture/IMG_6645.webp",
           imageUrl3: "PHOTOS/Culture/IMG_6649 2.webp",
+          date: "August 29, 2024 7pm" ,
         },
       7: {
           title: "Entry #7: Dal-uy Festival (hosted by Foundation University) [Participant]",
@@ -75,6 +81,7 @@ const contentData = {
           imageUrl1: "PHOTOS/Culture/IMG_6671.webp",
           imageUrl2: "PHOTOS/Culture/IMG_6673.webp",
           imageUrl3: "PHOTOS/Culture/IMG_6679.webp",
+          date: "August 31, 2024 7pm" ,
         },
 
       8: {
@@ -86,6 +93,7 @@ const contentData = {
           imageUrl1: "PHOTOS/Culture/IMG_6820.webp",
           imageUrl2: "PHOTOS/Culture/IMG_6822.webp",
           imageUrl3: "PHOTOS/Culture/IMG_6824.webp",
+          date: "September 12, 2024 7pm" ,
         },
 
     // Add similar entries for each box up to contentBox8
@@ -105,23 +113,24 @@ function handleBoxClick(event) {
 // Function to enlarge a box
 function enlargeBox(box, contentNum) {
     // Enlarge the clicked box and update its content
-    const { title, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
+    const { title, date, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
 
     box.classList.add('enlarged');
     box.innerHTML = `
-        <div class="boxInformation">
-            <button class="close-button">&times;</button>
-            <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
-            <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
-            <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
-            <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>
-            <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content4}</h3>
-            <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
-                <img src="${imageUrl1}" class="mobileimagesindiv">
-                <img src="${imageUrl2}" class="mobileimagesindiv">
-                <img src="${imageUrl3}" class="mobileimagesindiv">
-            </div>
+    <div class="boxInformation">
+        <button class="close-button">&times;</button>
+        <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
+        <center> <h3 class="normalyap" style="margin: 5px 0 20px;">${date}</h3> </center>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content4}</h3>
+        <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
+            <img src="${imageUrl1}" class="mobileimagesindiv">
+            <img src="${imageUrl2}" class="mobileimagesindiv">
+            <img src="${imageUrl3}" class="mobileimagesindiv">
         </div>
+    </div>
     `;
 
     // Add event listener for the close button

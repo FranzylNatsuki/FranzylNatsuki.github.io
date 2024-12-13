@@ -13,6 +13,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Community/8ca82e8e-c0bd-4fcb-9c26-a9f8a2da1398.webp",
         imageUrl2: "PHOTOS/Community/58dbb35c-5256-4115-b8fd-c05319f1e53b.webp",
         imageUrl3: "PHOTOS/Community/Screenshot 2024-11-26 at 8.45.47 PM.webp",
+        date: "September 29, 2024 5am" ,
     },
     2: {
         title: "Entry #2: Pa-init, Pag-hatag ug ka-Init (hosted by the DOST sa SU) [Committee Head]",
@@ -23,6 +24,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Community/17c7043e-6110-4400-85ce-fa521b26e623.webp",
         imageUrl2: "PHOTOS/Community/489caba3-a820-4aad-a588-cf2bcfbb2c38.webp",
         imageUrl3: "PHOTOS/Community/Screenshot 2024-11-26 at 8.35.02 PM.webp",
+        date: "September 16, 2024 2pm" ,
     },
 
     1: {
@@ -34,6 +36,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Community/IMG_6364 2.webp",
         imageUrl2: "PHOTOS/Community/IMG_6361 2.webp",
         imageUrl3: "PHOTOS/Community/IMG_6352 2er.webp",
+        date: "August 16, 2024 5pm" ,
     },
     4: {
         title: "Entry #4: Bata Ng Calabnugan – Donation Drive (hosted by Dumaguete Asian Printers Co.) [Working Committee]",
@@ -44,6 +47,7 @@ const contentData = {
         imageUrl1: "PHOTOS/Community/output-onlinepngtools.png",
         imageUrl2: "PHOTOS/Community/Screenshot 2024-12-13 at 7.38.40 AM.webp",
         imageUrl3: "PHOTOS/Community/output-onlinepngtools.png",
+        date: "November 26, 2024" ,
       },
     // Add similar entries for each box up to contentBox8
 };
@@ -62,23 +66,24 @@ function handleBoxClick(event) {
 // Function to enlarge a box
 function enlargeBox(box, contentNum) {
     // Enlarge the clicked box and update its content
-    const { title, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
+    const { title, date, content1, content2, content3, content4, imageUrl1, imageUrl2, imageUrl3 } = contentData[contentNum];
 
     box.classList.add('enlarged');
     box.innerHTML = `
-      <div class="boxInformation">
-          <button class="close-button">&times;</button>
-          <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>
-          <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content4}</h3>
-          <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
-              <img src="${imageUrl1}" class="mobileimagesindiv">
-              <img src="${imageUrl2}" class="mobileimagesindiv">
-              <img src="${imageUrl3}" class="mobileimagesindiv">
-          </div>
-      </div>
+    <div class="boxInformation">
+        <button class="close-button">&times;</button>
+        <h2 style="margin: 0 auto; text-align: center;">${title}</h2>
+        <center> <h3 class="normalyap" style="margin: 5px 0 20px;">${date}</h3> </center>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content1}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content2}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content3}</h3>
+        <h3 class="normalyap normalyapscontent" style="margin: 20px;">${content4}</h3>
+        <div class="mobileimages" style="display: flex; justify-content: center; gap: 10px; align-items: center; margin: 15px;">
+            <img src="${imageUrl1}" class="mobileimagesindiv">
+            <img src="${imageUrl2}" class="mobileimagesindiv">
+            <img src="${imageUrl3}" class="mobileimagesindiv">
+        </div>
+    </div>
     `;
 
     // Add event listener for the close button
