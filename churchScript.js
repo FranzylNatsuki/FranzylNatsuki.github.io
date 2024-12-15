@@ -55,8 +55,8 @@ const contentData = {
       content3: "This experience definitely changed how I view group bible sessions because I thought it wouldn’t really be all that interesting, but I guess that just depends on whoever is doing it and if they are passionate. I would’ve loved to continue with it but because that was just a one-off thing and it was rare that I didn’t have class at that time period, we just didn’t go through with it but I definitely see the appeal of it now.",
       content4: "Because of this activity, I get to appreciate group sessions and setting time to actually talk about God and the Bible. It helps calm your mind and your spirit and allows me to get closer to other people in the group.",
       imageUrl1: "PHOTOS/Church/IMG_7410.webp",
-      imageUrl2: "PHOTOS/Church/IMG_7417.webp",
-      imageUrl3: "PHOTOS/Church/IMG_7415.webp",
+      imageUrl2: "PHOTOS/Church/IMG_7415.webp",
+      imageUrl3: "PHOTOS/Church/IMG_7411.webp",
       date: "November 15, 2024 1pm" ,
   },
   6: {
