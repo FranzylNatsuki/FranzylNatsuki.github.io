@@ -28,7 +28,7 @@ const contentData = {
       date: "August 31, 2024 7PM" ,
   },
   3: {
-      title: "Entry #3: PSFF Softball Men’s Tournament (Hosted by PSFF) [Participant]",
+      title: "Entry #3: PSFF Softball Men’s Tournament (Hosted by PlanOut Sports and Fitness Festival) [Participant]",
       content1: "PSFF is an sports organization that hosts yearly tournaments around the city and they had lots of events piled up. One of these sporting events was a Softball Tournament at Rusi Ballfield. Softball isn’t common in the Philippines so I never got to see a real match in real life before. This match specifically was one of the first in their lineup for the week.",
       content2: "I know a bit of the rules of baseball but softball is a little different. Softball uses underhand pitching instead of overhand and has a smaller field. It still felt quite similar however so I was able to keep up with their plays. Their skill was quite good and was pretty inspired by their pitches and their batting.",
       content3: "Seeing this match made me realize that stuff in real life looks much better than it does in media. If you’re ever curious about a sport you’d never see in your day to day you just have to go out of your way to see it yourself. This definitely benefitted my knowledge of new sports that I’ve never experienced before.",
@@ -39,7 +39,7 @@ const contentData = {
       date: "September 7, 2024 2 PM" ,
   },
   4: {
-      title: "Entry #4: PSFF Karate Tournament (Hosted by PSFF) [Participant]",
+      title: "Entry #4: PSFF Karate Tournament (Hosted by PlanOut Sports and Fitness Festival) [Participant]",
       content1: "This is another tournament/competition hosted by PSFF and held in the NORSU gym. This was actually for children around 10-15 and it was mostly based on performance and form rather than an actual sparring match. There were even judges rating their form like it was gymnastics.",
       content2: "Watching this young kids reminded me of my time learning “karate” back in elementary school. It was only really an performance art form, hence why it’s called Martial Arts. I got to learn how to do the punches and the footwork. I didn’t last too long because it was too annoying to continue and I never got my uniform. But seeing these kids be so good at their form and was even in the zone, made me realize that if I just continued that maybe I’d look as cool as them back then. ",
       content3: "This experience helped me realize that if you just keep on being consistent on the things that you’re doing right now, you could achieve many things. Sadly I signed up to Karate for the wrong reasons and couldn’t really get into it. Seeing this also made me reflect on the things that I’ve given up simply because I was never really clear with the reason I why I got into it. It also made me appreciate the arts component in martial arts, as these techniques barely work in the grand scheme of things.",
@@ -61,7 +61,7 @@ const contentData = {
       date: "September 7, 2024 4 PM" ,
   },
   6: {
-      title: "Entry #6: PSFF Badminton Tournament (Hosted by PSFF [Participant]",
+      title: "Entry #6: PSFF Badminton Tournament (Hosted by PlanOut Sports and Fitness Festival [Participant]",
       content1: "The last match that we got to see this day was another PSFF Tournament but for badminton. It was taking place in Riverside Courts which I’ve always wanted to go to because I wanted to play badminton.",
       content2: "Watching the badminton tournament opened my eyes. I thought I'd just see some skilled players, but I was blown away by how focused and quick they were, and how they moved. One player caught my attention though,  she didn't give up after being against her opponent , which really wowed me and the audience and people cheered her on when she was so close to tying the match.",
       content3: "The tournament changed how I see things. It showed me why it's so important to bounce back and learn from winning and losing. I can use this way of thinking for my own goals making sure I don't give up. I want to stay connected to the sport maybe by going to more tournaments or joining a club near me.",

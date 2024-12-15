@@ -5,7 +5,7 @@ const contentBoxes = document.querySelectorAll('.contentBox');
 // Define unique content for each box by ID
 const contentData = {
   1: {
-      title: "Entry #1: College of Computer Science Founders Week: Devotion (hosted by College of Computer Science) [Participant]",
+      title: "Entry #1: CCS Founders Week Opening Devotion (hosted by College of Computer Science) [Participant]",
       content1: "Turns out in my first few weeks of school it would be the founder’s week of our college and we had a devotion mass. It was early in the morning and was just a quick mass. It was my first time in the Silliman Church as well actually. It was hosted by our college’s faculty and was held inside the Church.",
       content2: "The sermon was very insightful and the main discussion of the homily is breaking down the letters in CCS to mean 1: Committing All Plans and Activities to God, 2: Connecting with God in prayer, 3: Surrender all glory and credit to God (C.C.S). This was a very impactful set of advices to live by because as college students it is important to have a spiritual support system in times of hardship and challenges. Another set of acronyms is PEN, Presence of the lord, Enabling the power of the lord, Nurturing the love and care of the lord. These were all good advice that we learned that would help us succeed as CCS students.",
       content3: "This experienced made me realize that as a Computer Science Major I will have a lot of struggles and challenges that I would need to go through to get my degree. I have to commit all my intentions to God and to connect with him by constant prayer, and of course to give all the glory to the Lord almighty. I realized that I’m not alone in this journey as long as I pray and stay connected to God.",
@@ -38,7 +38,7 @@ const contentData = {
       date: "October 1, 2024 6:30pm" ,
   },
   4: {
-      title: "Entry #4: Cathedral Parish Day / Parade of Saints (hosted by Dumaguete Cathedral) [Participant]",
+      title: "Entry #4: Cathedral Parish Day / Parade of Saints (hosted by St. Catherine of Alexandria Cathedral Parish) [Participant]",
       content1: "The Dumaguete Cathedral Parish day is a celebration feast of the Dumaguete Cathedral. It was a short mass followed by a little parade of the people right after. It was a busy afternoon and the Cathedral Church was well decorated for the occasion.",
       content2: "There were a lot of families in attendance but the main event of the parish day is the Parade of Saints. It was a well done mass about St. Catherine of Alexandria. The Parade of saints was consisting of the priest, altar boys and the people in attendance lighting up a torch and going around the church. It was a very special gathering and there was a little program after in front of the church later that night. It was really nice to see since I haven’t been in that church in a long time and it was where my mother took me to go to church before we moved.",
       content3: "What I got from the parade of saints was that it’s also important to support the churches that are around you because they do their job very well in maintaining a holy place of worship and as well as marking a significant part of your city’s history. Considering that the belltower and church itself is full of historical and cultural value, it’s important that a ruling party such as the parish ministry is taking care of that place of worship.",
@@ -49,7 +49,7 @@ const contentData = {
       date: "October 31, 2024 5pm" ,
   },
   5: {
-      title: "Entry #5: IVCF Bible Group Session (hosted by IVCF) [Participant]",
+      title: "Entry #5: IVCF Bible Group Session (hosted by InterVarsity Christian Fellowship-Negros Oriental) [Participant]",
       content1: "IVCF is a non-profit organization that does group and duo Bible study sessions. My friend happened to book a group session and invited us. We did it on the grass, on campus, on a nice Friday afternoon. I was along a few CCS Students so it wasn’t awkward at all. Our Bible session leader, Ate Yel from CBA was a super nice and approachable lady. She was a long-time member of the organization and did many of these group sessions weekly.",
       content2: "Ate Yel’s session was very interesting and fun. She was really good at explaining scriptures and would often relate their meanings to us in such an easy way. She was super nice and inviting, she had some activities that really helped to open up. The group session definitely surprised me as I had fun and learned a few things about the bible and about belief. This experience benefitted me because I got to be able to delve into the bible with my friends and had a relaxing and fun time.",
       content3: "This experience definitely changed how I view group bible sessions because I thought it wouldn’t really be all that interesting, but I guess that just depends on whoever is doing it and if they are passionate. I would’ve loved to continue with it but because that was just a one-off thing and it was rare that I didn’t have class at that time period, we just didn’t go through with it but I definitely see the appeal of it now.",
