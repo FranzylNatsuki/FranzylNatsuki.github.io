@@ -90,7 +90,7 @@ const contentData = {
       imageUrl1: "PHOTOS/Church/IMG_7529.webp",
       imageUrl2: "PHOTOS/Church/IMG_7531.webp",
       imageUrl3: "PHOTOS/Church/IMG_7535.webp",
-      date: "Novemeber 27, 2024 4pm" ,
+      date: "November 27, 2024 4pm" ,
   },
     // Add similar entries for each box up to contentBox8
 };
